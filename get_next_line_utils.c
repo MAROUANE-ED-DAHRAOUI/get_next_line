@@ -49,7 +49,6 @@ size_t	ft_strlen(char const *str)
 	return (len);
 }
 
-
 char	*ft_strjoin(char *s1, char *s2)
 {
 	char	*str;
