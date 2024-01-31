@@ -19,7 +19,6 @@ char	*new_lines(char *rd_lines)
 	int		j;
 
 	i = 0;
-	line_new = NULL;
 	while (rd_lines[i] && rd_lines[i] != '\n')
 		i++;
 	if (!rd_lines[i])
@@ -29,10 +28,7 @@ char	*new_lines(char *rd_lines)
 	}
 	line_new = malloc(ft_strlen(rd_lines) - i + 1);
 	if (!line_new)
-	{
-		free(line_new);
 		return (NULL);
-	}
 	i++;
 	j = 0;
 	while (rd_lines[i])
