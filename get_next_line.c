@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: med-dahr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/23 17:04:15 by med-dahr          #+#    #+#             */
-/*   Updated: 2024/01/26 13:43:47 by med-dahr         ###   ########.fr       */
+/*   Created: 2024/01/31 12:15:54 by med-dahr          #+#    #+#             */
+/*   Updated: 2024/01/31 12:16:16 by med-dahr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,7 +117,7 @@ char	*get_next_line(int fd)
 	static char		*rd_lines;
 	char			*lines;
 
-	if (BUFFER_SIZE < 0 || fd < 0)
+	if (BUFFER_SIZE <= 0 || fd < 0)
 		return (NULL);
 	if (!rd_lines)
 	{
@@ -136,13 +136,13 @@ char	*get_next_line(int fd)
 /*#include <stdio.h>
 int main()
 {
-	int fd = open("text.txt", O_RDWR, 777);
+	int fd = open("text.txt", O_CREAT | O_RDWR, 777);
 	if(fd < 0)
 	return -1;
 
 	char *str;
 	int i = 0;
-	while(i < 4)
+	while(i < 7)
 	{
 		str = get_next_line(fd);
 		printf("%d->%s", i, str);
