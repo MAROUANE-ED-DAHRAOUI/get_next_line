@@ -1,3 +1,5 @@
+![Quotation-Friedrich-Nietzsche-Sometimes-people-don-t-want-to-hear-the-truth-because-34-72-80](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*aUIp48W8ZBNthBxTX9mMtg.jpeg)
+
 # Get Next Line
 
 This is the `Third` project of `42Cursus`. <br />
